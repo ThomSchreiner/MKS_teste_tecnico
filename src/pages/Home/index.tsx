@@ -1,3 +1,4 @@
+import { Header } from "../../components/Header";
 import { useProductsContext } from "../../contexts/products";
 
 export const Home = () => {
@@ -6,9 +7,11 @@ export const Home = () => {
 
   return (
     <main>
-      {products.map((product) => (
+      {/* {products.map((product) => (
         <h1 key={product.id}>{product.name}</h1>
-      ))}
+      ))} */}
+
+      <Header />
     </main>
   );
 };
