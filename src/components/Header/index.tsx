@@ -1,5 +1,5 @@
 import { StyledHeader } from "./style";
-import Cart from "../../assets/Cart.svg";
+import cart from "../../assets/cart.svg";
 
 export const Header = () => {
   return (
@@ -10,7 +10,7 @@ export const Header = () => {
           <p>Sistemas</p>
         </div>
         <button>
-          <img src={Cart} alt="Cart" />
+          <img src={cart} alt="cart" />
           <span>0</span>
         </button>
       </nav>
