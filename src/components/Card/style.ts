@@ -8,6 +8,10 @@ export const StyledCard = styled.li`
   flex-direction: column;
   justify-content: space-between;
 
+  @media (max-width: 502px) {
+    width: 250px;
+  }
+
   figure {
     padding: 18px;
     display: flex;

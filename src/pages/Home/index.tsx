@@ -8,7 +8,9 @@ export const Home = () => {
     <>
       <Header />
       <StyledMain>
-        <CardList />
+        <div>
+          <CardList />
+        </div>
       </StyledMain>
       <Footer />
     </>
