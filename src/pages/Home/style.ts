@@ -5,6 +5,7 @@ export const StyledMain = styled.main`
   justify-content: center;
 
   & > div {
+    max-width: 1100px;
     margin: 0 150px;
 
     @media (max-width: 860px) {
