@@ -6,6 +6,7 @@ export interface iProductsProviderProps {
 
 export interface iProductsContext {
   products: iProduct[] | null;
+  formatValueToBRL: (value: number) => string;
 }
 
 export interface iProduct {
