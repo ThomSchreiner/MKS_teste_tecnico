@@ -5,7 +5,7 @@ import { useShoopingCartContext } from "../../contexts/shoopingCart";
 import { useProductsContext } from "../../contexts/products";
 
 export const Card = ({ product }: iCardProps) => {
-  const { id, name, brand, photo, price, description } = product;
+  const { id, name, photo, price } = product;
   const { formatValueToBRL } = useProductsContext();
   const { addProductToCart } = useShoopingCartContext();
 
