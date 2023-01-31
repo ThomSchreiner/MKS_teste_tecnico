@@ -22,7 +22,12 @@ export const ProductsProvider = ({ children }: iProductsProviderProps) => {
     getProducts();
   }, []);
 
-  return <ProductsContext.Provider value={{ products }}>{children}</ProductsContext.Provider>;
+  const formatValueToBRL = (value: number) =>
+    value.toLocaleString("pt-BR", { style: "currency", currency: "BRL", minimumFractionDigits: 0 });
+
+  return (
+    <ProductsContext.Provider value={{ products, formatValueToBRL }}>{children}</ProductsContext.Provider>
+  );
 };
 
 export const useProductsContext = () => useContext(ProductsContext);

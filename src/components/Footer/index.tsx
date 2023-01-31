@@ -1,3 +1,5 @@
+import { StyledFooter } from "./style";
+
 export const Footer = () => {
-  return <div>Footer</div>;
+  return <StyledFooter>MKS sistemas © Todos os direitos reservados</StyledFooter>;
 };

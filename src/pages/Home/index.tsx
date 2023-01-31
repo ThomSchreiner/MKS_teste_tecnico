@@ -1,14 +1,20 @@
-import { useProductsContext } from "../../contexts/products";
+import { CardList } from "../../components/CardList";
+import { Footer } from "../../components/Footer";
+import { Header } from "../../components/Header";
+import { ShoppingCartMenu } from "../../components/ShoppingCartMenu";
+import { StyledMain } from "./style";
 
 export const Home = () => {
-  const { products } = useProductsContext();
-  if (!products) return null;
-
   return (
-    <main>
-      {products.map((product) => (
-        <h1 key={product.id}>{product.name}</h1>
-      ))}
-    </main>
+    <>
+      <Header />
+      <ShoppingCartMenu />
+      <StyledMain>
+        <div>
+          <CardList />
+        </div>
+      </StyledMain>
+      <Footer />
+    </>
   );
 };
